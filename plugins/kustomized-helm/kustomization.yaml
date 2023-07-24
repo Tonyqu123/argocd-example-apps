@@ -4,4 +4,9 @@ resources:
 - ./all.yaml
 
 patches:
-- overlays/guestbook-deployment.yaml
+- path: overlays/guestbook-deployment.yaml
+  target:
+    kind: Deployment
+    name: guestbook
+  
+
